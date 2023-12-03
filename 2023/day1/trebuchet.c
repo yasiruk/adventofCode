@@ -2,6 +2,8 @@
 
 int main(int argc, char **argv) {
   FILE *input = fopen(argv[1], "r");
+  int part2 = argc > 3 && argv[2][0] == '2';
+  
   int acc = 0;
   int cur = -1;
   int c;
